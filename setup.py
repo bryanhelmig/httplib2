@@ -1,5 +1,7 @@
 from setuptools import setup, find_packages
+import sys
 
+pkgdir = {'': 'python%s' % sys.version_info[0]}
 VERSION = '0.7.2'
 
 setup(
@@ -11,7 +13,8 @@ setup(
     download_url='https://github.com/bryanhelmig/httplib2-bigcerts/',
     description='A comprehensive HTTP client library.',
     license='MIT',
-    packages = find_packages(),
+    package_dir=pkgdir,
+    packages=['httplib2'],
     classifiers = [
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
