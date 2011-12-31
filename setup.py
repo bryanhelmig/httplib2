@@ -10,6 +10,6 @@ setup(name = 'httplib2',
       author = 'Joe Gregorio',
       author_email = 'joe@bitworking.org',
       url = 'http://github.com/bryanhelmig/httplib2',
-      package_dir = pkgdir,
+      packages = find_packages(),
       keywords = 'httplib2 http certs'
 )
