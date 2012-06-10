@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys
 
-VERSION = '0.7.2'
+VERSION = '0.7.4'
 
 setup(name = 'httplib2',
       version = VERSION,
